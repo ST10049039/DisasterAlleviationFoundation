@@ -1,0 +1,23 @@
+﻿@page
+@model DisasterAlleviationFoundation.Pages.VolunteerModel
+@{
+    ViewData["Title"] = "Volunteer Management";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="volunteerName">Your Name</label>
+        <input type="text" class="form-control" id="volunteerName" name="VolunteerName" required>
+    </div>
+    <div class="form-group">
+        <label for="skills">Skills</label>
+        <input type="text" class="form-control" id="skills" name="Skills" required>
+    </div>
+    <div class="form-group">
+        <label for="availability">Availability</label>
+        <input type="text" class="form-control" id="availability" name="Availability" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Register as Volunteer</button>
+</form>
+

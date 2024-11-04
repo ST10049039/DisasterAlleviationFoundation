@@ -16,3 +16,46 @@ html {
 body {
   margin-bottom: 60px;
 }
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.welcome-text h1 {
+    font-size: 2.5rem;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.welcome-text span {
+    color: #4caf50; /* Highlights the foundation's name in a green color */
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.welcome-image img {
+    max-width: 200px;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

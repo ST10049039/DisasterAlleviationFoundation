@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisasterAlleviationFoundation", "DisasterAlleviationFoundation.csproj", "{0295E66C-7676-44CE-B054-31384CE6D6EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisasterAlleviationFoundation", "DisasterAlleviationFoundation.csproj", "{0295E66C-7676-44CE-B054-31384CE6D6EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisasterAlleviation.Tests", "..\DisasterAlleviation.Tests\DisasterAlleviation.Tests.csproj", "{48643CAE-E707-4DC1-B9A2-804384F917B9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0295E66C-7676-44CE-B054-31384CE6D6EF} = {0295E66C-7676-44CE-B054-31384CE6D6EF}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{0295E66C-7676-44CE-B054-31384CE6D6EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0295E66C-7676-44CE-B054-31384CE6D6EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0295E66C-7676-44CE-B054-31384CE6D6EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48643CAE-E707-4DC1-B9A2-804384F917B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48643CAE-E707-4DC1-B9A2-804384F917B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48643CAE-E707-4DC1-B9A2-804384F917B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48643CAE-E707-4DC1-B9A2-804384F917B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

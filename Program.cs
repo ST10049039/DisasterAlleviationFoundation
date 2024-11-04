@@ -43,7 +43,12 @@ app.UseRouting();
 
 app.UseAuthentication(); // Ensure authentication middleware is enabled
 app.UseAuthorization();
-
+// Specify that Index page should be the default page
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 
 app.Run();
+
+app.MapGet("/", () => Results.Redirect("/LoginPartial")); // Replace "YourPage" with the desired page, e.g., "/Welcome"
